@@ -1,6 +1,12 @@
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+for(i=0; i<array.length; i++){
+  let comp = array.splice(0, 1); 
+  if(array.includes(target-comp)){
+    debugger;
+    return true
+  }
+}return false}
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,7 +14,10 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-*/
+
+should take an array and target number as arguments and return true if any sum of two array elements equals target number.
+should return true if the difference of an element in the array and the target number exist in the array.
+else should return false
 
 /*
   Add written explanation of your solution here
