@@ -9,7 +9,7 @@ for(i=0; i<array.length; i++){
 }return false}
 
 /* 
-  Write the Big O time complexity of your function here
+O(n)
 */
 
 /* 
@@ -20,7 +20,11 @@ should return true if the difference of an element in the array and the target n
 else should return false
 
 /*
-  Add written explanation of your solution here
+  function hasTargetSum accepts and array and a target as an argument and iterates over that array using a for loop.
+  The for loop used the splice method to desctuctively remove the first number in the array and save it to the comp variable.
+  The loop subtracts the spliced number from the target number to obtain the difference of those two numbers
+  Then using an includes method to determine if the difference of those two numbers exists in the array.
+  If so it returns true, if not it reiterates over the array of remaining numbers until it recieves a true statement in which case it returns true or reaches the end of the loop and returns false.
 */
 
 // You can run `node index.js` to view these console logs
